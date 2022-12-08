@@ -36,4 +36,15 @@ var isPalindrome=function(x){
   return true
 }
 console.log(isPalindrome('malayalam'))  //output:true
+------------------------------------------------------------------------------
+let isPalindrome=function(str){
+  let x=str.length
+  for(let i=0;i<x/2;i++){
+    if(str[i]!=str[x-1-i]){
+      return false
+    }
+    return true
+  }
+}
+console.log(isPalindrome('malayalam'))  //output:true
 ==========================================================================================================================================================================
