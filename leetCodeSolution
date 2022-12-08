@@ -27,3 +27,13 @@ let sumIndices=function(nums,target=17){
 }
 console.log(sumIndices(nums)) //output:[0, 3]
 ==========================================================================================================================================================================
+code 2:Palindrome
+var isPalindrome=function(x){
+  if(x<0){
+    return false;
+  }
+  return x.toString()==x.toString().split('').reverse().join('')
+  return true
+}
+console.log(isPalindrome('malayalam'))  //output:true
+==========================================================================================================================================================================
