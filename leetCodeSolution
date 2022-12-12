@@ -23,7 +23,7 @@ let sumIndices=function(nums,target=17){
     }
     map[nums[i]]=i
   }
-  return result
+  return result;
 }
 console.log(sumIndices(nums)) //output:[0, 3]
 ==========================================================================================================================================================================
