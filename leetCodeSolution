@@ -43,7 +43,7 @@ let isPalindrome=function(str){
     if(str[i]!=str[x-1-i]){
       return false
     }
-    return true
+    return true;
   }
 }
 console.log(isPalindrome('malayalam'))  //output:true
