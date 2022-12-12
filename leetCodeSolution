@@ -33,7 +33,7 @@ var isPalindrome=function(x){
     return false;
   }
   return x.toString()==x.toString().split('').reverse().join('')
-  return true
+  return true;
 }
 console.log(isPalindrome('malayalam'))  //output:true
 ------------------------------------------------------------------------------
