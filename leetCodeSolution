@@ -48,3 +48,32 @@ let isPalindrome=function(str){
 }
 console.log(isPalindrome('malayalam'))  //output:true
 ==========================================================================================================================================================================
+code 3: Longest Common Prefix
+var longestCommonPrefix=function(strs){
+  if(strs.length==0){
+    return " "
+  }
+  let r=''
+  for(let i=0;i<strs.length;i++){
+    for(let j=1;j<strs.length;j++){
+      if(strs[0][i]!=strs[j][i]){
+        return r
+      }
+    }
+    r+=strs[0][i]
+  }
+  return r
+}
+console.log(longestCommonPrefix(['apple','apollo','app']))  //output:"ap"
+==========================================================================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
