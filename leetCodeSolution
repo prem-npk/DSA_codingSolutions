@@ -77,7 +77,21 @@ let longestCommonPrefix=function(strs){
   return arr[0].substring(0,i)
 }
 longestCommonPrefix(['show','shoe','shoz']) //output:"sho"
-
+-----------------------------------------------------------------------------
+let longestCommonPrefix=function(strs){
+  let ans=""
+  var arr=strs.sort()
+  for (i in arr[0]){
+    if(!arr.every((el)=>el[i]===arr[0][i])){
+      break
+    }
+    ans+=arr[0][i]
+    
+  }
+  console.log(ans)
+  return ans
+}
+longestCommonPrefix(['apollo','app']) //output:"ap"
 ==========================================================================================================================================================================
 
 
