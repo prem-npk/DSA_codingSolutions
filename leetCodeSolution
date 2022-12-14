@@ -110,6 +110,22 @@ var isValid=function(s){
   return arr.length===0?true:false
 }
 console.log(isValid(([])))  //output:true
+------------------------------------------------------------------------------
+var isValid=(s)=>{
+  let stack=[];
+  for(ch of s){
+    if(ch=="(" || ch=="[" || ch=="{"){
+      stack.push()
+    }
+    else{
+      const p=stack.pop()
+      if((ch=="(" && p!=")") ||(ch=="[" && p!="]") || (ch=="{" && p!="}"))
+        return false;
+    }
+  }
+  return stack.length==0
+}
+console.log(isValid(([{}])))  //output:true
 ==========================================================================================================================================================================
 
 
