@@ -93,7 +93,24 @@ let longestCommonPrefix=function(strs){
 }
 longestCommonPrefix(['apollo','app']) //output:"ap"
 ==========================================================================================================================================================================
-
+code 3: Valid Paranthesis 
+var isValid=function(s){
+  let map={"(":")","[":"]","{":"}"}
+  let arr=[]
+  for(ch in s){
+    if(map[ch]){
+      arr.push(map[ch])
+    }
+    else if(arr.length>0 &&arr[arr.length-1]===ch){
+      arr.pop()
+    }
+    else 
+      return false
+  }
+  return arr.length===0?true:false
+}
+console.log(isValid(([])))  //output:true
+==========================================================================================================================================================================
 
 
 
