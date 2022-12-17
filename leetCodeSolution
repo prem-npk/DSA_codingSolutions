@@ -133,8 +133,25 @@ var containsDuplicate=function(nums){
 }
 console.log(containsDuplicate([1,1,2,4,5,6,2,3,4])) //output:true
 ==========================================================================================================================================================================
-
-
+code 5: Fibonacci Number
+let fib=N=>{
+  return (N<2)?N:fib(N-2)+fib(N-1)
+}
+console.log(fib(7))   //output:13
+----------------------------------------------------------------------------
+const fib=n=>{
+  const memo={}
+  for(let i=0;i<=n;i++){
+    if(i<2){
+      memo[i]=i
+    }else{
+      memo[i]=memo[i-2]+memo[i-1]
+    }
+  }
+  return memo[n]
+}
+console.log(fib(7))    //output:13
+---------------------------------------------------------------------------
 
 
 
