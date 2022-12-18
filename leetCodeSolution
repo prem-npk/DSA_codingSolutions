@@ -175,6 +175,16 @@ var searchInsert=function(nums,target){
   return start
 }
 console.log(searchInsert([1,2,4,5],3))    //output:3
+-----------------------------------------------------------------------------
+var searchInsert=function(nums,target){
+  for(var i=0;i<nums.length;i++){
+    if(target===nums[i]||target<nums[i]){
+      return i
+    }
+  }
+  return nums.length
+}
+console.log(searchInsert([1,2,3,4,5],6))
 ==========================================================================================================================================================================
 
 
