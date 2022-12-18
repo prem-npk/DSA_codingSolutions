@@ -161,7 +161,21 @@ const fib=n=>{
 }
 console.log(fib(7))   //output:13
 ==========================================================================================================================================================================
-
+code 5:Search Insert Position:
+var searchInsert=function(nums,target){
+  let start=0;
+  let end=nums.length-1
+  while(start<end){
+    const mid=Math.floor((start+end)/2)
+    if(nums[mid]<target)
+      start=nums[mid]+1
+      else
+        end=end-1
+  }
+  return start
+}
+console.log(searchInsert([1,2,4,5],3))    //output:3
+==========================================================================================================================================================================
 
 
 
