@@ -89,7 +89,7 @@ let longestCommonPrefix=function(strs){
     
   }
   console.log(ans)
-  return ans
+  return ans;
 }
 longestCommonPrefix(['apollo','app']) //output:"ap"
 ==========================================================================================================================================================================
