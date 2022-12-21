@@ -220,7 +220,7 @@ function isAnagram(s,t){
   }
   return true
 }
-console.log(isAnagram('amen','enjami'))
+console.log(isAnagram('amen','enjami'))   //output:false
 ===========================================================================================================================================================================
 code 8:Length of Last Word
 let lengthOfLastWord=function(str){
