@@ -206,7 +206,13 @@ let validAnagram=function(s,t){
 }
 console.log(validAnagram('foo','ofo'))    //output:true
 -----------------------------------------------------------------------------
-
+code 8:Length of Last Word
+let lengthOfLastWord=function(str){
+  let arr=str.split(' ')
+  return arr[arr.length-1].length
+}
+console.log(lengthOfLastWord('Hi Prem is in Bangalore'))  //output:9
+==========================================================================================================================================================================
 
 
 
