@@ -251,7 +251,7 @@ let lengthOfWord=function(s){
   }
   return len
 }
-console.log(lengthOfWord('I want be software'))
+console.log(lengthOfWord('I want be software'))   //output:8
 ==========================================================================================================================================================================
 
 
