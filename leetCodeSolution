@@ -266,6 +266,6 @@ let majorityItem=function(nums){
   if(map[item]>=nums.length/2) return item
     }
 }
-console.log(majorityItem('aaaaabbbb'))
+console.log(majorityItem('aaaaabbbb'))    //output:"a"
 
 
