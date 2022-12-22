@@ -254,5 +254,18 @@ let lengthOfWord=function(s){
 console.log(lengthOfWord('I want be software'))   //output:8
 ==========================================================================================================================================================================
 code 9:Majority Element
+let majorityItem=function(nums){
+  let map={}
+  for(let item of nums){
+    if(!map[item])
+      map[item]=1
+  else {
+    map[item]++
+  }
+  
+  if(map[item]>=nums.length/2) return item
+    }
+}
+console.log(majorityItem('aaaaabbbb'))
 
 
