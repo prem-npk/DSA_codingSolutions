@@ -228,6 +228,11 @@ let lengthOfLastWord=function(str){
   return arr[arr.length-1].length
 }
 console.log(lengthOfLastWord('Hi Prem is in Bangalore'))  //output:9
+------------------------------------------------------------------------------
+let lengthOfWord=function(s){
+  return s.trim().split(' ').pop().length
+}
+console.log(lengthOfWord('I would like to ate delicious'))   //output:9
 ==========================================================================================================================================================================
 
 
