@@ -239,6 +239,19 @@ let lengthOfWord=function(s){
 }
 console.log(lengthOfWord('I would like to ate delicious'))  //output:9
 ------------------------------------------------------------------------------
+let lengthOfWord=function(s){
+  let hasStarted=false;
+  let len=0
+  for(let i=s.length-1;i>=0;i--){
+    if(s[i]!==' ') hasStarted=true
+    if(hasStarted){
+      if(s[i]===" ") break;
+      len++
+    }
+  }
+  return len
+}
+console.log(lengthOfWord('I want be software'))
 ==========================================================================================================================================================================
 
 
