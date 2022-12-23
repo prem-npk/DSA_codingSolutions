@@ -62,7 +62,7 @@ var longestCommonPrefix=function(strs){
     }
     r+=strs[0][i]
   }
-  return r
+  return r;
 }
 console.log(longestCommonPrefix(['apple','apollo','app']))  //output:"ap"
 -------------------------------------------------------------------------------
