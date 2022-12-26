@@ -342,6 +342,31 @@ let reverseNumber=function(s){
   return arr.join('')
 }
 console.log(reverseNumber('bangalore'))   //output:"bengolara"
+------------------------------------------------------------------------------
+let reverseVowel=(str)=>{
+  let l=0
+  let r=str.length-1
+  let s=str.split('')
+  let vowel=new Set(['a','e','i','o','A','E','I','O','U'])
+  while(l<r){
+    if(vowel.has(s[l]) && vowel.has(s[r])){
+      swap(s,l,r)
+      l++
+      r--
+    }else if(!vowel.has(s[l])){
+      l++
+    }else if (!vowel.has(s[r])){
+      r--
+    }
+  }
+  return s.join('')
+}
+const swap=(arr,l,r)=>{
+  let temp=arr[l]
+   arr[l]=arr[r]
+   arr[r]=arr[l]
+}
+console.log(reverseVowel('delhi'))    //output:"dilhi"
 ===========================================================================================================================================================================
 
 
