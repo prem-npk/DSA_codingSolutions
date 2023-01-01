@@ -378,6 +378,14 @@ var singleNumber=function(num){
   }
 }
 console.log(singleNumber([2,5,5,2,3]))   //output:3
+---------------------------------------------------------------------------
+let singleNumber=function(num){
+  let hash={}
+  for(let val of num){
+    hash[val]?delete hash[val]:hash[val]=1
+  }
+  return Object.key(hash)[0]
+}
 ===========================================================================================================================================================================
 
 
