@@ -386,6 +386,15 @@ let singleNumber=function(num){
   }
   return Object.key(hash)[0]
 }
+---------------------------------------------------------------------------
+let singleNumber=function(num){
+  for(let i=0;i<num.length;i++){
+    if(num.indexOf(num[i])===num.lastIndexOf(num[i])){
+      return num[i]
+    }
+  }
+}
+console.log(singleNumber([2,3,5,2,3]))  //output:5
 ===========================================================================================================================================================================
 
 
