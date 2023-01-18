@@ -480,6 +480,25 @@ var findDisappeared=function(num){
 }
 console.log(findDisappeared([4,3,2,7,8,2,3,1]))   //output:["0", "5", "6"]
 ===========================================================================================================================================================================
+code 15:Merge Strings Alternately:
+var mergeAlternately=function(wd1,wd2){
+  let merged=[]
+  let word1=wd1.split('')
+  let word2=wd2.split('')
+  for(let i=0;i<word1.length || word2.length;i++){
+    merged.push(word1[i])
+    if(word2[i]){
+      merged.push(word2[i])
+    }
+  }
+  return merged.join('')
+}
+console.log(mergeAlternately('abc','def'))
+===========================================================================================================================================================================
+
+
+
+
 
 
 
