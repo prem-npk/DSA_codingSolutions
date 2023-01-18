@@ -495,7 +495,22 @@ var mergeAlternately=function(wd1,wd2){
 }
 console.log(mergeAlternately('abc','def'))    //output:"adbecf"
 ===========================================================================================================================================================================
-
+code 16:Divide a String Into Groups of Size k: 
+var divideString=function(s,k,fill){
+  let result=[]
+  for(i=0;i<s.length;i+=k){
+    const element=s.slice(i,i+k)
+    if(element.length==k){
+      result.push([element])
+    }
+    else{
+      result.push(element+fill.repeat(k-element.length))
+    }
+  }
+  return result
+}
+console.log(divideString('abcdedghij',3,'p'))
+===========================================================================================================================================================================
 
 
 
