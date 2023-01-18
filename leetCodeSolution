@@ -493,7 +493,7 @@ var mergeAlternately=function(wd1,wd2){
   }
   return merged.join('')
 }
-console.log(mergeAlternately('abc','def'))
+console.log(mergeAlternately('abc','def'))    //output:"adbecf"
 ===========================================================================================================================================================================
 
 
