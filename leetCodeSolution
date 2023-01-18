@@ -509,7 +509,7 @@ var divideString=function(s,k,fill){
   }
   return result
 }
-console.log(divideString('abcdedghij',3,'p'))
+console.log(divideString('abcdedghij',3,'p'))   //output:[["abc"], ["ded"], ["ghi"], "jpp"]
 ===========================================================================================================================================================================
 
 
