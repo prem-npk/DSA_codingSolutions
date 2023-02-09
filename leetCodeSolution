@@ -218,7 +218,7 @@ function isAnagram(s,t){
     else 
       return false
   }
-  return true
+  return true;
 }
 console.log(isAnagram('amen','enjami'))   //output:false
 ===========================================================================================================================================================================
